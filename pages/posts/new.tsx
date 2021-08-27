@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Form from "../../components/Form";
+import NextHeader from "../../components/NextHeader";
 
 const PostPageStyled = styled.div`
   display: flex;
@@ -11,6 +12,10 @@ const PostPageStyled = styled.div`
 
 const NewPost = () => (
   <PostPageStyled>
+    <NextHeader
+      title="Behold | Create post"
+      description="Create your own post"
+    />
     <h2>Create your own post</h2>
     <Form />
   </PostPageStyled>

@@ -1,4 +1,5 @@
 import type { NextPage, NextPageContext } from "next";
+import NextHeader from "../../components/NextHeader";
 import { PostType } from "../../interfaces";
 import { getSinglePost } from "../../utils/fetchData";
 
@@ -8,6 +9,7 @@ interface PostPageProps {
 
 const PostPage: NextPage<PostPageProps> = ({ post }) => (
   <>
+    <NextHeader title={post.title} description={post.body} />
     <h1>{post.title}</h1>
     <p>{post.body}</p>
   </>

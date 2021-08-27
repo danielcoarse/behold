@@ -21,6 +21,7 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.172",
     "@types/nprogress": "^0.2.0",
     "@types/react": "17.0.19",
     "@types/styled-components": "^5.1.13",
