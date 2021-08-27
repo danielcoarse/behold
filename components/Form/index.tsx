@@ -13,7 +13,14 @@ const Form = () => {
     e.preventDefault();
     const res = await createPost(title, body);
 
-    if (res) dispatch(resetForm());
+    if (res) {
+      dispatch(resetForm());
+      alert("Post submited");
+    }
+
+    if (!res) {
+      alert("Something went wrong!");
+    }
   };
 
   return (
