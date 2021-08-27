@@ -1,5 +1,5 @@
 import axios from "axios";
-import _ from "lodash";
+import uuid from "react-uuid";
 
 export const getPosts = async () => {
   try {
@@ -22,7 +22,7 @@ export const getSinglePost = async (id: string | string[] | undefined) => {
 export const createPost = async (title: string, body: string) => {
   try {
     const newPost = {
-      id: _.uniqueId("p_"),
+      id: uuid(),
       title,
       body,
     };
