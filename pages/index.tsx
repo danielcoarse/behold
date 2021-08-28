@@ -3,7 +3,6 @@ import NextHeader from "../components/NextHeader";
 import { getPosts } from "../utils/fetchData";
 import PostCard from "../components/PostCard";
 import { PostType } from "../interfaces";
-import { useEffect } from "react";
 
 interface HomePageProps {
   posts: PostType[];
