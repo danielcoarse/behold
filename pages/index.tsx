@@ -3,6 +3,7 @@ import NextHeader from "../components/NextHeader";
 import { getPosts } from "../utils/fetchData";
 import PostCard from "../components/PostCard";
 import { PostType } from "../interfaces";
+import { useEffect } from "react";
 
 interface HomePageProps {
   posts: PostType[];
@@ -14,7 +15,6 @@ const Home: NextPage<HomePageProps> = ({ posts }) => (
     {posts && posts.map((post) => <PostCard key={post.id} {...post} />)}
   </div>
 );
-
 export default Home;
 
 export const getServerSideProps = async () => {

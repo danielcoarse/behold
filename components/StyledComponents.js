@@ -16,3 +16,19 @@ export const StyledMain = styled.main`
   flex-direction: column;
   padding: 3rem 0;
 `;
+
+export const Divider = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  margin: 2rem auto;
+`;
+
+export const Title2 = styled.h2`
+  text-align: center;
+`;
+
+export const StyledPostContainer = styled.div`
+  margin: 0 auto;
+  width: 90%;
+`;
